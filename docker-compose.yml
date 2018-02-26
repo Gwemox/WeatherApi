@@ -1,0 +1,79 @@
+version: '3'
+
+services:
+    web-server:
+        build: web-server
+        ports:
+            - "80:3000"
+        volumes:
+            - ./web-server/logs:/var/web-server/log
+    mongo_1:
+        image: mongo
+        volumes:
+            - ./mongo1:/data
+        ports:
+           - "27018:27017"
+        command: mongod --bind_ip 0.0.0.0 --smallfiles --replSet MySecureData
+        depends_on:
+            - mongo_2
+            - mongo_3
+    mongo_2:
+        image: mongo
+        volumes:
+            - ./mongo2:/data
+        ports:
+            - "27019:27017"
+       command: mongod --bind_ip 0.0.0.0 --smallfiles --replSet MySecureData
+    mongo_3:
+        image: mongo
+        volumes:
+            - ./mongo3:/data
+       ports:
+            - "27020:27017"
+        command: mongod --bind_ip 0.0.0.0 --smallfiles --replSet MySecureData
+    mongo_setup:
+        image: mongo
+        volumes:
+            - ./scripts:/scripts
+        command: /scripts/initiate_replica_master.sh
+        depends_on:
+            - mongo_1
+            - mongo_2
+            - mongo_3
+    mysql_master:
+        build: mysql
+        volumes:
+            - ./mysql_master:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=mysqlroot
+            - MYSQL_USER=example_user
+            - MYSQL_PASSWORD=mysqlpwd
+            - MYSQL_DATABASE=example
+            - REPLICATION_USER=replication_user
+            - REPLICATION_PASSWORD=myreplpassword
+    mysql_slave:
+        build: mysql
+        volumes:
+            - ./mysql_slave:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=mysqlroot
+            - MYSQL_USER=example_user
+            - MYSQL_PASSWORD=mysqlpwd
+            - MYSQL_DATABASE=example
+            - REPLICATION_USER=replication_user
+            - REPLICATION_PASSWORD=myreplpassword
+            - MASTER_HOST=mysql_master
+        depends_on:
+            - mysql_master
+    #phpmyadmin_master:
+    #    image: phpmyadmin/phpmyadmin
+    #    ports:
+    #        - "8080:80"
+    #    environment:
+    #        - PMA_HOST=mysql_master
+    #phpmyadmin_slave:
+    #    image: phpmyadmin/phpmyadmin
+    #    ports:
+    #        - "8081:80"
+    #    environment:
+    #        - PMA_HOST=mysql_slave
