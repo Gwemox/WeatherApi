@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="60 90 484 557" width="424px" height="467px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="352" y1="443" x2="342" y2="443" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="374" y1="512" x2="384" y2="512" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="342" y1="443" x2="374" y2="512" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="344.5" y1="443" x2="348.03553390593" y2="446.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="344.5" y1="443" x2="348.03553390593" y2="439.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="379" y1="512" x2="375.46446609407" y2="515.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="379" y1="512" x2="375.46446609407" y2="508.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="352" y1="423" x2="342" y2="423" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="201" y1="270" x2="191" y2="270" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="342" y1="423" x2="201" y2="270" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="344.5" y1="423" x2="348.03553390593" y2="426.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="344.5" y1="423" x2="348.03553390593" y2="419.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="196" y1="270" x2="199.53553390593" y2="273.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="196" y1="270" x2="199.53553390593" y2="266.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="353" y1="288" x2="343" y2="288" style="stroke:#333;stroke-width:1;"/>
+   <line x1="373" y1="135" x2="383" y2="135" style="stroke:#333;stroke-width:1;"/>
+   <line x1="343" y1="288" x2="373" y2="135" style="stroke:#333;stroke-width:1;"/>
+   <line x1="345.5" y1="288" x2="349.03553390593" y2="291.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="345.5" y1="288" x2="349.03553390593" y2="284.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="378" y1="135" x2="374.46446609407" y2="138.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="378" y1="135" x2="374.46446609407" y2="131.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="353" y1="268" x2="343" y2="268" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="201" y1="270" x2="191" y2="270" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="343" y1="268" x2="201" y2="270" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="345.5" y1="268" x2="349.03553390593" y2="271.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="345.5" y1="268" x2="349.03553390593" y2="264.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="196" y1="270" x2="199.53553390593" y2="273.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="196" y1="270" x2="199.53553390593" y2="266.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <rect width="116" height="20" x="384" y="482" style="fill:#007;stroke:black;"/>
+   <text width="116" height="20" x="389" y="496" style="fill:#fff;" font-family="Arial" font-size="16px"> orientation</text>
+   <rect width="116" height="20" x="384" y="502" style="fill:#aea;stroke:black;"/>
+   <text width="116" height="20" x="389" y="516" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="116" height="20" x="384" y="522" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="389" y="536" style="fill:black;" font-family="Arial" font-size="16px">direction</text>
+   <rect width="116" height="20" x="383" y="105" style="fill:#007;stroke:black;"/>
+   <text width="116" height="20" x="388" y="119" style="fill:#fff;" font-family="Arial" font-size="16px"> practice</text>
+   <rect width="116" height="20" x="383" y="125" style="fill:#aea;stroke:black;"/>
+   <text width="116" height="20" x="388" y="139" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="116" height="20" x="383" y="145" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="388" y="159" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="116" height="20" x="75" y="240" style="fill:#007;stroke:black;"/>
+   <text width="116" height="20" x="80" y="254" style="fill:#fff;" font-family="Arial" font-size="16px"> site</text>
+   <rect width="116" height="20" x="75" y="260" style="fill:#aea;stroke:black;"/>
+   <text width="116" height="20" x="80" y="274" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="116" height="20" x="75" y="280" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="294" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="116" height="20" x="75" y="300" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="314" style="fill:black;" font-family="Arial" font-size="16px">zipcode</text>
+   <rect width="116" height="20" x="75" y="320" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="334" style="fill:black;" font-family="Arial" font-size="16px">latitude</text>
+   <rect width="116" height="20" x="75" y="340" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="354" style="fill:black;" font-family="Arial" font-size="16px">longitude</text>
+   <rect width="116" height="20" x="75" y="360" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="374" style="fill:black;" font-family="Arial" font-size="16px">structure</text>
+   <rect width="116" height="20" x="75" y="380" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="394" style="fill:black;" font-family="Arial" font-size="16px">identity</text>
+   <rect width="116" height="20" x="75" y="400" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="80" y="414" style="fill:black;" font-family="Arial" font-size="16px">last_update</text>
+   <rect width="116" height="20" x="352" y="373" style="fill:#007;stroke:black;"/>
+   <text width="116" height="20" x="357" y="387" style="fill:#fff;" font-family="Arial" font-size="16px"> site_orientation</text>
+   <rect width="116" height="20" x="352" y="393" style="fill:#aea;stroke:black;"/>
+   <text width="116" height="20" x="357" y="407" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="116" height="20" x="352" y="413" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="357" y="427" style="fill:black;" font-family="Arial" font-size="16px">id_site</text>
+   <rect width="116" height="20" x="352" y="433" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="357" y="447" style="fill:black;" font-family="Arial" font-size="16px">id_orientation</text>
+   <rect width="116" height="20" x="353" y="218" style="fill:#007;stroke:black;"/>
+   <text width="116" height="20" x="358" y="232" style="fill:#fff;" font-family="Arial" font-size="16px"> site_practice</text>
+   <rect width="116" height="20" x="353" y="238" style="fill:#aea;stroke:black;"/>
+   <text width="116" height="20" x="358" y="252" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="116" height="20" x="353" y="258" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="358" y="272" style="fill:black;" font-family="Arial" font-size="16px">id_site</text>
+   <rect width="116" height="20" x="353" y="278" style="fill:none;stroke:black;"/>
+   <text width="116" height="20" x="358" y="292" style="fill:black;" font-family="Arial" font-size="16px">id_practice</text>
+</svg>

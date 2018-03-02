@@ -5,7 +5,7 @@ module.exports.controller = function(router, models){
         let modelClass = models[model];
         let route = '/' + modelClass.name.toLowerCase();
 
-        console.log('[INFO] Export protected route : POST /api' + route);
+        console.log('[INFO] Export route : POST /api' + route);
         router.post(route, function(req,res,err){
             mongoose.model(modelClass.name).create(req.body, function(err, result) {
                 if (err) {
@@ -16,7 +16,7 @@ module.exports.controller = function(router, models){
             })
         });
 
-        console.log('[INFO] Export protected route : GET /api' + modelClass.routeGets);
+        console.log('[INFO] Export route : GET /api' + modelClass.routeGets);
         router.get(modelClass.routeGets, function(req, res, err) {
             mongoose.model(modelClass.name).findEnabled({}, function(err, result){
                 if (err) views.responseMessage(res, 400, err);
@@ -24,7 +24,7 @@ module.exports.controller = function(router, models){
             }, req.query.limit, req.query.offset);
         });
 
-        console.log('[INFO] Export protected route : GET /api' + route + '/:id');
+        console.log('[INFO] Export route : GET /api' + route + '/:id');
         router.get(route + '/:id', function(req,res,err){
             mongoose.model(modelClass.name).findOneEnabled({_id: req.params.id}, function(err, resultat){
                 if (err) views.responseMessage(res, 400, err);
@@ -32,7 +32,7 @@ module.exports.controller = function(router, models){
             });
         });
 
-        console.log('[INFO] Export protected route : PATCH /api' + route + '/:id');
+        console.log('[INFO] Export route : PATCH /api' + route + '/:id');
         router.patch(route + '/:id', function(req,res,err){
             var id = req.params.id;
 
@@ -50,7 +50,7 @@ module.exports.controller = function(router, models){
             });
         })
 
-        console.log('[INFO] Export protected route : DELETE /api' + route + '/:id');
+        console.log('[INFO] Export route : DELETE /api' + route + '/:id');
         router.delete(route + '/:id', function(req,res,err){
             var id = req.params.id;
             if (!id){

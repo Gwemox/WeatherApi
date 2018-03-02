@@ -8,13 +8,8 @@ class WeatherSite extends BaseModel {
   constructor() {
     super();
     this.setFields({
-        number: Number,
-        street: String,
-        zip_code: String,
-        city: String,
-        country: String,
-        email: String,
-        phone: String
+        siteId: Number,
+        openweathermap: Schema.Types.Mixed
     });
   }
 }

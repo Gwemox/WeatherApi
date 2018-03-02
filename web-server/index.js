@@ -7,7 +7,22 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
+const dataFixtues = require("./utils/dataFixtures");
+
+
+/* ========== Mongoose ========== */
+
+/* Use good Promise */
+mongoose.Promise = Promise
+
+mongoose.connect('mongodb://mongo_1:27017/weather', {useMongoClient: true});
+mongoose.plugin(schema => { schema.options.usePushEach = true });
+
+/* ========== END Mongoose ========== */
+
+
 /* ========== Weather ========== */
+
 const OpenWeatherMap = require("./utils/openweathermap");
 OpenWeatherMap.startCron();
 
@@ -18,11 +33,6 @@ OpenWeatherMap.startCron();
 /* Use BodyParser for body content */
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-mongoose.connect('mongodb://localhost:27018/weather', {useMongoClient: true});
-mongoose.plugin(schema => { schema.options.usePushEach = true });
-/* Use good Promise */
-mongoose.Promise = Promise
 
 const dirModels = join(__dirname, './models');
 const excludeModels = [
