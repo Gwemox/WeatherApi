@@ -25,6 +25,7 @@ Les mongoDB exposent leur port 27017 sur la machine sur les ports 27018 (mongo 1
 Le port du webserver (3000) est exposé sur le port 80 de la machine, c'est à dire que l'API est à cette addresse : http://localhost:80
 
 Voici les routes possibles :
+
 web-server_1         | [INFO] Export route : GET /api/sites <<<< Liste des sites disponibles
 
 web-server_1         | [INFO] Export route : POST /api/weathersite <<<< Ajouter une donnée météo
