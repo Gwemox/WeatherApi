@@ -14,8 +14,11 @@ Nathan Molle
 Les bases de données SQL & MongoDB seront automatiquement créées. L'API récupère la météo sur OpenWeatherMap toutes les minutes de 60 sites (car c'est la limite). Actuellement il y a 967 sites donc il faut 17 minutes pour tous les mettre à jour.
 
 Vous pouvez accéder à des PHPMyAdmin en local des mysql_master et mysql_slave respectivement aux adresses :
-- localhost:8080/
+- localhost:8080/ 
 - localhost:8081/
+
+USER : root
+Mot De Passe : jeanmichelmaire
 
 Les mongoDB exposent leur port 27017 sur la machine sur les ports 27018 (mongo 1) - 27019 (mongo 2) - 27020 (mongo 3)
 
