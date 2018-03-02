@@ -23,11 +23,18 @@ Le port du webserver (3000) est exposé sur le port 80 de la machine, c'est à d
 
 Voici les routes possibles :
 web-server_1         | [INFO] Export route : GET /api/sites <<<< Liste des sites disponibles
+
 web-server_1         | [INFO] Export route : POST /api/weathersite <<<< Ajouter une donnée météo
+
 web-server_1         | [INFO] Export route : GET /api/weathersites <<<< Récupérer toutes les données météos LIMITE de 10
+
 web-server_1         | [INFO] Export route : GET /api/weathersite/:id <<<< Récupère une donnée météo
+
 web-server_1         | [INFO] Export route : PATCH /api/weathersite/:id <<<< Modifie une donnée météo
+
 web-server_1         | [INFO] Export route : DELETE /api/weathersite/:id <<<< Supprime une donnée météo
+
 web-server_1         | [INFO] Export route : GET /api/canFly/:id <<<< Indique si on peut voler sur un site donné (idSite récupérable dans la liste des sites)
+
 
 **Le diagramme de la base de donnée est disponible au format SVG dans le fichier : weather_api.svg**
